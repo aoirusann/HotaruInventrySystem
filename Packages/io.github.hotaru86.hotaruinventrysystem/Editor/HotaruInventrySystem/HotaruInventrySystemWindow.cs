@@ -271,8 +271,10 @@ namespace hotarunohikari.HotaruInventrySystem
                 type = VRCExpressionsMenu.Control.ControlType.SubMenu,
                 parameter = new VRCExpressionsMenu.Control.Parameter(),
                 subMenu = subExMenu,
-                subParameters = Array.Empty<VRCExpressionsMenu.Control.Parameter>()
+                subParameters = Array.Empty<VRCExpressionsMenu.Control.Parameter>(),
+				labels = Array.Empty<VRCExpressionsMenu.Control.Label>(),
             });
+
 
             for (int i = 0; i< objectGroups.Count; i++)
             {
@@ -283,7 +285,8 @@ namespace hotarunohikari.HotaruInventrySystem
                     type = VRCExpressionsMenu.Control.ControlType.Toggle,
                     parameter = new VRCExpressionsMenu.Control.Parameter() { name = GetParameterNameFromGroupName(group.groupName)},
                     value = 1.0f,
-                    subParameters = Array.Empty<VRCExpressionsMenu.Control.Parameter>()
+                    subParameters = Array.Empty<VRCExpressionsMenu.Control.Parameter>(),
+                    labels = Array.Empty<VRCExpressionsMenu.Control.Label>(),
                 });
 
                 MAParam.parameters.Add(new ParameterConfig()
