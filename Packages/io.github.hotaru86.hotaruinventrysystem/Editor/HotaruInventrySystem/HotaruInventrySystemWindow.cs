@@ -272,7 +272,7 @@ namespace hotarunohikari.HotaruInventrySystem
                 parameter = new VRCExpressionsMenu.Control.Parameter(),
                 subMenu = subExMenu,
                 subParameters = Array.Empty<VRCExpressionsMenu.Control.Parameter>(),
-				labels = Array.Empty<VRCExpressionsMenu.Control.Label>(),
+		labels = Array.Empty<VRCExpressionsMenu.Control.Label>(),
             });
 
 
